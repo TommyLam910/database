@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Data Into Database</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form method="post" action="php/insertIntoValues.php">
+      <fieldset>
+        
+        <legend>Enter the infomration of the event </legend>
+
+        <label>Event ID</label>
+        <input type="text" name="eventID" maxlength="3" pattern="^E[0-9][0-9]$" placeholder="E__"> 
+        <br>
+
+        <label>Event Subject</label>
+        <input type="text" name="eventSubject" maxlength="25">
+        <br>
+
+        <label>Building</label>
+        <select name="building">
+            <option>South Building</option>
+            <option>North Building</option>
+            <option>East Building</option>
+            <option>West Building</option>
+            <option>Online</option>
+        </select>
+        <br>
+
+        <label>Building Floor</label>
+        <input type="type" name="buildingFloor" maxlength="2">
+        <br>
+
+        <label>Room Number</label>
+        <input type="number" name="roomNumber">
+        <br>
+
+        <label>Registration Fee</label>
+        <input type="number" name="registrationFee" min="0" maxlength="5" step=".01" >
+        <br>
+
+        <label>Event Date</label>
+        <input type="date" name="eventDate">
+        <br>
+
+        <label>Event Time</label>
+        <input type="time" name="eventTime">
+        <br>
+        <br>
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    <br>
+    <a href="index.html">Back to the homepage</a>
+
+    <footer>
+        <small> CopyRight &copy; Tommy Lam 2022 </small>
+    </footer>
+
+  </body>
+</html>

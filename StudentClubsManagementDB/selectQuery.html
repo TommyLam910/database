@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update a record in a table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form method="post" action="php/selectAllQuery.php">
+        <fieldset>
+          <legend>Display All Event</legend>
+          <br>
+          <br>
+          <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br />
+    <br />
+
+    <form method="post" action="php/selectLikeQuery.php">
+      <fieldset>
+        <legend>Display event subject which starts with</legend>
+        <label>Event subject starts with: </label>
+        <input type="text" name="eventSubject" maxlength="25">
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+
+    <form method="post" action="php/selectWhereQuery.php">
+      <fieldset>
+        <legend>Display registrationFee from an event</legend>
+        <label>Registration Fee</label>
+        <input type="number" name="registrationFee" min="0" maxlength="5" step=".01" > 
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <a href='index.html'>Back to the Homepage</a>
+
+    <footer>
+      <small> CopyRight &copy; Tommy Lam 2022 </small>
+    </footer>
+
+  </body>
+</html>

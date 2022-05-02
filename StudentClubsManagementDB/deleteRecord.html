@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete a Record in a Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <p>Delete the record of an event, given the event ID:</p>
+    <form method="post" action="php/deleteRecord.php">
+      <label>Event ID</label>
+      <input type="text" name="eventID" maxlength="3" pattern="^E[0-9][0-9]$" placeholder="E__"> 
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+  <a href='index.html'>Back to the Homepage</a>
+
+  <footer>
+    <small> CopyRight &copy; Tommy Lam 2022 </small>
+  </footer>
+  
+  </body>
+</html>
